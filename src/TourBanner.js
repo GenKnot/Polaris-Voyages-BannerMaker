@@ -81,12 +81,12 @@ export default function TourBanner() {
   return (
     <div style={{ 
       padding: '40px', 
-      backgroundColor: '#f5f5f5', 
+      backgroundColor: '#fafafa', 
       minHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      gap: '40px'
+      gap: '30px'
     }}>
       
       <div 
@@ -246,10 +246,10 @@ export default function TourBanner() {
       <div style={{ 
         backgroundColor: 'white', 
         padding: '30px', 
-        borderRadius: '15px',
-        boxShadow: '0 10px 40px rgba(0,0,0,0.1)'
+        borderRadius: '8px',
+        border: '1px solid #e5e5e5'
       }}>
-        <h2 style={{ margin: '0 0 20px 0', fontSize: '20px', fontWeight: 'bold', textAlign: 'center' }}>
+        <h2 style={{ margin: '0 0 20px 0', fontSize: '16px', fontWeight: '600', color: '#333' }}>
           预览效果
         </h2>
         
@@ -261,9 +261,9 @@ export default function TourBanner() {
             transform: 'scale(0.48)',
             transformOrigin: 'top center',
             background: `linear-gradient(135deg, ${displayConfig.gradientStart} 0%, ${displayConfig.gradientEnd} 100%)`,
-            borderRadius: '15px',
+            borderRadius: '4px',
             overflow: 'hidden',
-            boxShadow: '0 20px 60px rgba(0,0,0,0.3)',
+            border: '1px solid rgba(0,0,0,0.1)',
             position: 'relative',
             display: 'flex',
             flexDirection: 'row',
@@ -352,7 +352,7 @@ export default function TourBanner() {
                 fontSize: '24px',
                 fontWeight: '700',
                 borderRadius: '50px',
-                boxShadow: '0 4px 15px rgba(212,175,55,0.4)',
+                boxShadow: '0 4px 15px rgba(212,175,55,0.4)'
               }}>
                 <span>{displayConfig.ctaText}</span>
                 <span style={{ fontSize: '28px' }}>→</span>
@@ -363,7 +363,7 @@ export default function TourBanner() {
                   fontSize: '24px',
                   fontWeight: '700',
                   color: 'white',
-                  marginBottom: '5px',
+                  marginBottom: '5px'
                 }}>
                   {displayConfig.brandName}
                 </div>
@@ -413,17 +413,17 @@ export default function TourBanner() {
         width: '100%',
         maxWidth: '1200px',
         backgroundColor: 'white',
-        padding: '40px',
-        borderRadius: '15px',
-        boxShadow: '0 10px 40px rgba(0,0,0,0.1)'
+        padding: '35px',
+        borderRadius: '8px',
+        border: '1px solid #e5e5e5'
       }}>
-        <h3 style={{ margin: '0 0 30px 0', fontSize: '24px', fontWeight: 'bold' }}>
+        <h3 style={{ margin: '0 0 25px 0', fontSize: '16px', fontWeight: '600', color: '#333' }}>
           编辑内容
         </h3>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '25px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
           <div>
-            <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '600', color: '#333' }}>
+            <label style={{ display: 'block', marginBottom: '6px', fontSize: '13px', fontWeight: '500', color: '#555' }}>
               主标题
             </label>
             <input 
@@ -432,15 +432,15 @@ export default function TourBanner() {
               onChange={(e) => setTempConfig({...tempConfig, title: e.target.value})}
               style={{ 
                 width: '100%', 
-                padding: '12px', 
-                marginBottom: '20px', 
-                border: '2px solid #e0e0e0', 
-                borderRadius: '8px',
+                padding: '10px 12px', 
+                marginBottom: '16px', 
+                border: '1px solid #ddd', 
+                borderRadius: '4px',
                 fontSize: '14px'
               }}
             />
 
-            <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '600', color: '#333' }}>
+            <label style={{ display: 'block', marginBottom: '6px', fontSize: '13px', fontWeight: '500', color: '#555' }}>
               副标题
             </label>
             <input 
@@ -449,15 +449,15 @@ export default function TourBanner() {
               onChange={(e) => setTempConfig({...tempConfig, subtitle: e.target.value})}
               style={{ 
                 width: '100%', 
-                padding: '12px', 
-                marginBottom: '20px', 
-                border: '2px solid #e0e0e0', 
-                borderRadius: '8px',
+                padding: '10px 12px', 
+                marginBottom: '16px', 
+                border: '1px solid #ddd', 
+                borderRadius: '4px',
                 fontSize: '14px'
               }}
             />
 
-            <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '600', color: '#333' }}>
+            <label style={{ display: 'block', marginBottom: '6px', fontSize: '13px', fontWeight: '500', color: '#555' }}>
               宣传语
             </label>
             <input 
@@ -466,15 +466,15 @@ export default function TourBanner() {
               onChange={(e) => setTempConfig({...tempConfig, tagline: e.target.value})}
               style={{ 
                 width: '100%', 
-                padding: '12px', 
-                marginBottom: '20px', 
-                border: '2px solid #e0e0e0', 
-                borderRadius: '8px',
+                padding: '10px 12px', 
+                marginBottom: '16px', 
+                border: '1px solid #ddd', 
+                borderRadius: '4px',
                 fontSize: '14px'
               }}
             />
 
-            <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '600', color: '#333' }}>
+            <label style={{ display: 'block', marginBottom: '6px', fontSize: '13px', fontWeight: '500', color: '#555' }}>
               按钮文字
             </label>
             <input 
@@ -483,17 +483,17 @@ export default function TourBanner() {
               onChange={(e) => setTempConfig({...tempConfig, ctaText: e.target.value})}
               style={{ 
                 width: '100%', 
-                padding: '12px', 
-                marginBottom: '20px', 
-                border: '2px solid #e0e0e0', 
-                borderRadius: '8px',
+                padding: '10px 12px', 
+                marginBottom: '16px', 
+                border: '1px solid #ddd', 
+                borderRadius: '4px',
                 fontSize: '14px'
               }}
             />
           </div>
 
           <div>
-            <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '600', color: '#333' }}>
+            <label style={{ display: 'block', marginBottom: '6px', fontSize: '13px', fontWeight: '500', color: '#555' }}>
               品牌名称
             </label>
             <input 
@@ -502,15 +502,15 @@ export default function TourBanner() {
               onChange={(e) => setTempConfig({...tempConfig, brandName: e.target.value})}
               style={{ 
                 width: '100%', 
-                padding: '12px', 
-                marginBottom: '20px', 
-                border: '2px solid #e0e0e0', 
-                borderRadius: '8px',
+                padding: '10px 12px', 
+                marginBottom: '16px', 
+                border: '1px solid #ddd', 
+                borderRadius: '4px',
                 fontSize: '14px'
               }}
             />
 
-            <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '600', color: '#333' }}>
+            <label style={{ display: 'block', marginBottom: '6px', fontSize: '13px', fontWeight: '500', color: '#555' }}>
               品牌信息
             </label>
             <input 
@@ -519,15 +519,15 @@ export default function TourBanner() {
               onChange={(e) => setTempConfig({...tempConfig, brandInfo: e.target.value})}
               style={{ 
                 width: '100%', 
-                padding: '12px', 
-                marginBottom: '20px', 
-                border: '2px solid #e0e0e0', 
-                borderRadius: '8px',
+                padding: '10px 12px', 
+                marginBottom: '16px', 
+                border: '1px solid #ddd', 
+                borderRadius: '4px',
                 fontSize: '14px'
               }}
             />
 
-            <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '600', color: '#333' }}>
+            <label style={{ display: 'block', marginBottom: '6px', fontSize: '13px', fontWeight: '500', color: '#555' }}>
               图片链接
             </label>
             <input 
@@ -537,113 +537,113 @@ export default function TourBanner() {
               placeholder="https://example.com/image.jpg"
               style={{ 
                 width: '100%', 
-                padding: '12px', 
-                marginBottom: '20px', 
-                border: '2px solid #e0e0e0', 
-                borderRadius: '8px',
+                padding: '10px 12px', 
+                marginBottom: '16px', 
+                border: '1px solid #ddd', 
+                borderRadius: '4px',
                 fontSize: '14px'
               }}
             />
           </div>
         </div>
 
-        <div style={{ marginTop: '20px', paddingTop: '20px', borderTop: '2px solid #f0f0f0' }}>
-          <h4 style={{ margin: '0 0 20px 0', fontSize: '16px', fontWeight: '600' }}>颜色设置</h4>
+        <div style={{ marginTop: '20px', paddingTop: '20px', borderTop: '1px solid #e5e5e5' }}>
+          <h4 style={{ margin: '0 0 16px 0', fontSize: '14px', fontWeight: '600', color: '#333' }}>颜色设置</h4>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }}>
             <div>
-              <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '600', color: '#333' }}>
+              <label style={{ display: 'block', marginBottom: '6px', fontSize: '13px', fontWeight: '500', color: '#555' }}>
                 强调色
               </label>
-              <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                 <input 
                   type="color"
                   value={tempConfig.accentColor}
                   onChange={(e) => setTempConfig({...tempConfig, accentColor: e.target.value})}
-                  style={{ width: '60px', height: '40px', border: 'none', borderRadius: '8px', cursor: 'pointer' }}
+                  style={{ width: '50px', height: '36px', border: '1px solid #ddd', borderRadius: '4px', cursor: 'pointer' }}
                 />
                 <input 
                   type="text"
                   value={tempConfig.accentColor}
                   onChange={(e) => setTempConfig({...tempConfig, accentColor: e.target.value})}
-                  style={{ flex: 1, padding: '10px', border: '2px solid #e0e0e0', borderRadius: '8px', fontSize: '14px' }}
+                  style={{ flex: 1, padding: '8px 10px', border: '1px solid #ddd', borderRadius: '4px', fontSize: '13px' }}
                 />
               </div>
             </div>
 
             <div>
-              <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '600', color: '#333' }}>
+              <label style={{ display: 'block', marginBottom: '6px', fontSize: '13px', fontWeight: '500', color: '#555' }}>
                 渐变起始色
               </label>
-              <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                 <input 
                   type="color"
                   value={tempConfig.gradientStart}
                   onChange={(e) => setTempConfig({...tempConfig, gradientStart: e.target.value})}
-                  style={{ width: '60px', height: '40px', border: 'none', borderRadius: '8px', cursor: 'pointer' }}
+                  style={{ width: '50px', height: '36px', border: '1px solid #ddd', borderRadius: '4px', cursor: 'pointer' }}
                 />
                 <input 
                   type="text"
                   value={tempConfig.gradientStart}
                   onChange={(e) => setTempConfig({...tempConfig, gradientStart: e.target.value})}
-                  style={{ flex: 1, padding: '10px', border: '2px solid #e0e0e0', borderRadius: '8px', fontSize: '14px' }}
+                  style={{ flex: 1, padding: '8px 10px', border: '1px solid #ddd', borderRadius: '4px', fontSize: '13px' }}
                 />
               </div>
             </div>
 
             <div>
-              <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '600', color: '#333' }}>
+              <label style={{ display: 'block', marginBottom: '6px', fontSize: '13px', fontWeight: '500', color: '#555' }}>
                 渐变结束色
               </label>
-              <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                 <input 
                   type="color"
                   value={tempConfig.gradientEnd}
                   onChange={(e) => setTempConfig({...tempConfig, gradientEnd: e.target.value})}
-                  style={{ width: '60px', height: '40px', border: 'none', borderRadius: '8px', cursor: 'pointer' }}
+                  style={{ width: '50px', height: '36px', border: '1px solid #ddd', borderRadius: '4px', cursor: 'pointer' }}
                 />
                 <input 
                   type="text"
                   value={tempConfig.gradientEnd}
                   onChange={(e) => setTempConfig({...tempConfig, gradientEnd: e.target.value})}
-                  style={{ flex: 1, padding: '10px', border: '2px solid #e0e0e0', borderRadius: '8px', fontSize: '14px' }}
+                  style={{ flex: 1, padding: '8px 10px', border: '1px solid #ddd', borderRadius: '4px', fontSize: '13px' }}
                 />
               </div>
             </div>
           </div>
         </div>
 
-        <div style={{ marginTop: '25px' }}>
-          <h4 style={{ margin: '0 0 15px 0', fontSize: '14px', fontWeight: '600', color: '#666' }}>
-            快速选择配色方案
+        <div style={{ marginTop: '20px' }}>
+          <h4 style={{ margin: '0 0 12px 0', fontSize: '13px', fontWeight: '500', color: '#555' }}>
+            配色方案
           </h4>
-          <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#D4AF37', gradientStart: '#1a472a', gradientEnd: '#2d5a3d'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #1a472a, #2d5a3d)', color: '#D4AF37', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>绿色金调</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFD700', gradientStart: '#C79A5B', gradientEnd: '#E8C68A'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #C79A5B, #E8C68A)', color: '#FFD700', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>沙漠金色</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFE66D', gradientStart: '#FF6B6B', gradientEnd: '#FFA07A'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #FF6B6B, #FFA07A)', color: '#FFE66D', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>夕阳橙红</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFFFFF', gradientStart: '#4A90E2', gradientEnd: '#87CEEB'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #4A90E2, #87CEEB)', color: '#FFFFFF', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>晴空蓝天</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFD700', gradientStart: '#1e3c72', gradientEnd: '#2a5298'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #1e3c72, #2a5298)', color: '#FFD700', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>深海蓝金</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFA500', gradientStart: '#8B4513', gradientEnd: '#A0522D'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #8B4513, #A0522D)', color: '#FFA500', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>大地褐色</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFE4B5', gradientStart: '#8B008B', gradientEnd: '#9370DB'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #8B008B, #9370DB)', color: '#FFE4B5', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>薰衣草紫</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFDAB9', gradientStart: '#DC143C', gradientEnd: '#FF6347'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #DC143C, #FF6347)', color: '#FFDAB9', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>热情红色</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#00CED1', gradientStart: '#0F2027', gradientEnd: '#203A43'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #0F2027, #203A43)', color: '#00CED1', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>午夜青色</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFD700', gradientStart: '#2C5F2D', gradientEnd: '#97BC62'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #2C5F2D, #97BC62)', color: '#FFD700', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>森林绿金</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFFFFF', gradientStart: '#00B4DB', gradientEnd: '#0083B0'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #00B4DB, #0083B0)', color: '#FFFFFF', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>海洋蓝色</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFE4E1', gradientStart: '#FF69B4', gradientEnd: '#FFB6C1'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #FF69B4, #FFB6C1)', color: '#FFE4E1', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>樱花粉色</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#F0E68C', gradientStart: '#4B0082', gradientEnd: '#8A2BE2'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #4B0082, #8A2BE2)', color: '#F0E68C', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>神秘紫金</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFE4C4', gradientStart: '#CD853F', gradientEnd: '#DEB887'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #CD853F, #DEB887)', color: '#FFE4C4', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>秋日暖色</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFFACD', gradientStart: '#FF8C00', gradientEnd: '#FFA500'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #FF8C00, #FFA500)', color: '#FFFACD', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>日出橙色</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#E0FFFF', gradientStart: '#2F4F4F', gradientEnd: '#708090'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #2F4F4F, #708090)', color: '#E0FFFF', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>雾灰青色</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FAFAD2', gradientStart: '#556B2F', gradientEnd: '#6B8E23'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #556B2F, #6B8E23)', color: '#FAFAD2', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>橄榄绿色</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFF8DC', gradientStart: '#B8860B', gradientEnd: '#DAA520'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #B8860B, #DAA520)', color: '#FFF8DC', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>黄金时代</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#F5F5DC', gradientStart: '#8B0000', gradientEnd: '#B22222'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #8B0000, #B22222)', color: '#F5F5DC', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>酒红经典</button>
-            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFFFFF', gradientStart: '#000000', gradientEnd: '#434343'})} style={{padding: '10px 20px', border: '2px solid #e0e0e0', borderRadius: '8px', background: 'linear-gradient(135deg, #000000, #434343)', color: '#FFFFFF', cursor: 'pointer', fontWeight: '600', fontSize: '13px'}}>经典黑白</button>
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#D4AF37', gradientStart: '#1a472a', gradientEnd: '#2d5a3d'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #1a472a, #2d5a3d)', color: '#D4AF37', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>绿金</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFD700', gradientStart: '#C79A5B', gradientEnd: '#E8C68A'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #C79A5B, #E8C68A)', color: '#8B6914', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>沙漠</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFE66D', gradientStart: '#FF6B6B', gradientEnd: '#FFA07A'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #FF6B6B, #FFA07A)', color: '#fff', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>夕阳</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFFFFF', gradientStart: '#4A90E2', gradientEnd: '#87CEEB'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #4A90E2, #87CEEB)', color: '#fff', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>蓝天</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFD700', gradientStart: '#1e3c72', gradientEnd: '#2a5298'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #1e3c72, #2a5298)', color: '#FFD700', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>深海</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFA500', gradientStart: '#8B4513', gradientEnd: '#A0522D'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #8B4513, #A0522D)', color: '#FFA500', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>大地</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFE4B5', gradientStart: '#8B008B', gradientEnd: '#9370DB'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #8B008B, #9370DB)', color: '#FFE4B5', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>薰衣草</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFDAB9', gradientStart: '#DC143C', gradientEnd: '#FF6347'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #DC143C, #FF6347)', color: '#fff', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>热情</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#00CED1', gradientStart: '#0F2027', gradientEnd: '#203A43'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #0F2027, #203A43)', color: '#00CED1', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>午夜</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFD700', gradientStart: '#2C5F2D', gradientEnd: '#97BC62'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #2C5F2D, #97BC62)', color: '#FFD700', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>森林</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFFFFF', gradientStart: '#00B4DB', gradientEnd: '#0083B0'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #00B4DB, #0083B0)', color: '#fff', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>海洋</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFE4E1', gradientStart: '#FF69B4', gradientEnd: '#FFB6C1'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #FF69B4, #FFB6C1)', color: '#fff', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>樱花</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#F0E68C', gradientStart: '#4B0082', gradientEnd: '#8A2BE2'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #4B0082, #8A2BE2)', color: '#F0E68C', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>紫金</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFE4C4', gradientStart: '#CD853F', gradientEnd: '#DEB887'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #CD853F, #DEB887)', color: '#8B4513', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>秋日</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFFACD', gradientStart: '#FF8C00', gradientEnd: '#FFA500'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #FF8C00, #FFA500)', color: '#fff', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>日出</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#E0FFFF', gradientStart: '#2F4F4F', gradientEnd: '#708090'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #2F4F4F, #708090)', color: '#E0FFFF', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>雾灰</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FAFAD2', gradientStart: '#556B2F', gradientEnd: '#6B8E23'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #556B2F, #6B8E23)', color: '#FAFAD2', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>橄榄</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFF8DC', gradientStart: '#B8860B', gradientEnd: '#DAA520'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #B8860B, #DAA520)', color: '#8B6914', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>黄金</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#F5F5DC', gradientStart: '#8B0000', gradientEnd: '#B22222'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #8B0000, #B22222)', color: '#F5F5DC', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>酒红</button>
+            <button onClick={() => setTempConfig({...tempConfig, accentColor: '#FFFFFF', gradientStart: '#000000', gradientEnd: '#434343'})} style={{padding: '8px 16px', border: '1px solid #ddd', borderRadius: '4px', background: 'linear-gradient(135deg, #000000, #434343)', color: '#fff', cursor: 'pointer', fontWeight: '500', fontSize: '12px'}}>黑白</button>
           </div>
         </div>
 
-        <div style={{ marginTop: '35px', paddingTop: '25px', borderTop: '2px solid #f0f0f0', display: 'flex', gap: '20px', justifyContent: 'center'}}>
-          <button onClick={handleUpdate} style={{padding: '15px 50px', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', color: 'white', border: 'none', borderRadius: '10px', fontSize: '16px', fontWeight: '700', cursor: 'pointer', boxShadow: '0 4px 15px rgba(102, 126, 234, 0.4)', transition: 'transform 0.2s'}} onMouseEnter={(e) => e.target.style.transform = 'translateY(-2px)'} onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}>🔄 更新预览</button>
-          <button onClick={handleDownloadImage} disabled={isDownloading} style={{padding: '15px 50px', background: isDownloading ? '#ccc' : 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', color: 'white', border: 'none', borderRadius: '10px', fontSize: '16px', fontWeight: '700', cursor: isDownloading ? 'not-allowed' : 'pointer', boxShadow: isDownloading ? 'none' : '0 4px 15px rgba(245, 87, 108, 0.4)', transition: 'transform 0.2s', opacity: isDownloading ? 0.7 : 1}} onMouseEnter={(e) => !isDownloading && (e.target.style.transform = 'translateY(-2px)')} onMouseLeave={(e) => e.target.style.transform = 'translateY(0)'}>{isDownloading ? '⏳ 生成中...' : '⬇️ 下载Banner图片'}</button>
+        <div style={{ marginTop: '25px', paddingTop: '20px', borderTop: '1px solid #e5e5e5', display: 'flex', gap: '12px', justifyContent: 'center'}}>
+          <button onClick={handleUpdate} style={{padding: '12px 32px', background: '#333', color: 'white', border: 'none', borderRadius: '4px', fontSize: '14px', fontWeight: '500', cursor: 'pointer'}}>更新预览</button>
+          <button onClick={handleDownloadImage} disabled={isDownloading} style={{padding: '12px 32px', background: isDownloading ? '#999' : '#0066cc', color: 'white', border: 'none', borderRadius: '4px', fontSize: '14px', fontWeight: '500', cursor: isDownloading ? 'not-allowed' : 'pointer', opacity: isDownloading ? 0.6 : 1}}>{isDownloading ? '生成中...' : '下载图片'}</button>
         </div>
       </div>
     </div>
